@@ -8,32 +8,36 @@
         /* RESET */
 * {padding: 0; margin: 0;}
 *, *::after, *::before {box-sizing: border-box;}
-body, html {font-family: 'Ubuntu', sans-serif; font-size: 18px; }
+body, html {font-family: 'Ubuntu', sans-serif; font-size: 1.5vw; }
 img {height: auto;}
-h1 {font-size: 4rem;}
-h2 {font-size: 3rem;}
-h3 {font-size: 2rem;}
+h1 {font-size: 3.2rem;}
+h2 {font-size: 2rem;}
+h3 {font-size: 1.5rem;}
 h4 {font-size: 1rem;}
 h5 {font-size: 0.8rem;}
 h6 {font-size: 0.6rem;}
 a {text-decoration: none;}
 li {list-style-type: none;}
 
-
 /* -----------------------------
             LAYOUT
 ----------------------------- */
         /* CONTAINER */
 .container-full {width: 100vw;}
-.container-100 {width: 100%;}
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+        max-width: 1200px;
+        margin: 0 auto;
 }
 .container-sm {
-    width: 70%;
-    margin: 0 auto;
+        max-width: 900px;
+        margin: 0 auto;
 }
+.container-100 {width: 100%;}
+.container-90 {width: 90%; margin: 0 auto;}    
+.container-80 {width: 80%; margin: 0 auto;}    
+.container-70 {width: 70%; margin: 0 auto;}    
+.container-60 {width: 60%; margin: 0 auto;}    
+.container-50 {width: 50%;margin: 0 auto;}
 
         /* FLEXBOX */
 .row {
@@ -278,7 +282,14 @@ li {list-style-type: none;}
 .ht-150 {height: 150px;}
 .ht-200 {height: 200px;}
 .ht-250 {height: 250px;}
+.ht-300 {height: 300px;}
+.ht-400 {height: 400px;}
 .ht-500 {height: 500px;}
+.ht-600 {height: 600px;}
+.ht-700 {height: 700px;}
+.ht-800 {height: 800px;}
+.ht-900 {height: 900px;}
+.ht-vh {height: 100vh;}
 
 /* LARGHEZZE */
 .wt-10 {width: 10%;}
@@ -422,6 +433,7 @@ li {list-style-type: none;}
 .mt-75 {margin-top: 75px;}
 .mt-80 {margin-top: 80px;}
 .mt-100 {margin-top: 100px;}
+.mt-150 {margin-top: 150px;}
 
 .mb-10 {margin-bottom: 10px;}
 .mb-15 {margin-bottom: 15px;}
@@ -540,6 +552,7 @@ li {list-style-type: none;}
 .pt-75 {padding-top: 75px;}
 .pt-80 {padding-top: 80px;}
 .pt-100 {padding-top: 100px;}
+.pt-150 {padding-top: 150px;}
 
 .pb-10 {padding-bottom: 10px;}
 .pb-15 {padding-bottom: 15px;}

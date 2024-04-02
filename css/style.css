@@ -1,13 +1,15 @@
 /* ---------------------------
             HEADER
 --------------------------- */
-/* menu di sinistra */
+/* logo */
+.logo img {background-size: 80%;}
+
+/* menu */
 .menu {
     height: 80px; 
     position: fixed;
     z-index: 500;
 }
-.logo img {background-size: 80%;}
 
 .menu-left ul,
 .menu-right ul
@@ -23,12 +25,36 @@
 .menu-right ul li a {
     color: black;
     /* padding: 10px; */
-    font-size: 14px;
+    font-size: 13px;
     list-style-type: none;
 }
 
+/* bottone inizia */
 .btn {
+    padding: 8px 14px;
+    font-size: 12px;
     background-color: rgb(5, 93, 245); 
     color: white;
     border-radius: 0;
 }
+
+/* ---------------------------
+        MAIN • #1 SEZIONE
+--------------------------- */
+
+.hero-section {background-color: rgb(181, 209, 232);}
+
+.hero-section p {
+    font-size: 13px;  
+    font-weight: 100;  
+}
+
+.hero-section button {margin: 30px 0; font-size: 13px;}
+
+.hero-section img {width: 100%; height: auto;}
+
+.arrow {
+    font-size: 40px;
+    margin-top: 110px;
+}
+
