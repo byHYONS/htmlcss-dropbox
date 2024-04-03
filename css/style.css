@@ -153,9 +153,24 @@ label[for="mensile"] {margin-right: 25px;}
 }
 
 /* Sezione servizi */
-.service {}
-
 .service img {width: 100%;}
+
+
+/* Section testimonial */
+.testimonial h2 {
+    font-weight: 500;font-size: 45px;
+    margin-top: 150px;
+}
+
+.testimonial a {
+    display: inline-block;
+    margin-top: 75px;
+    font-weight: 100;
+    color: rgb(26, 65, 240);
+    text-decoration: 1.5px underline rgb(26, 65, 240);
+}
+
+/* Section square */
 
 
 
