@@ -3,7 +3,7 @@
 --------------------------- */
 p {font-size: 15px; font-weight: 100;}
 
-.col-33 {width: calc(100% / 3 - 25px);}
+.col-33__plan {width: calc(100% / 3 - 25px);}
 
 /* logo */
 .logo img {background-size: 80%;}
@@ -129,6 +129,30 @@ label[for="mensile"] {margin-right: 25px;}
     border: 1px solid rgb(207, 207, 212);
     width: 30%;
 }
+
+.btn__team {
+    margin-top: 35px;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+/* sezione foto testo */
+.partner {margin-top: 75px;}
+.partner img {
+    width: 100%;
+    height: auto;
+}
+
+.btn-trasparent-black {
+    font-weight: 100;
+    font-size: 18px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 0;
+}
+
+/* Sezione servizi */
+
+
 
 
 
