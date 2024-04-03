@@ -6,7 +6,6 @@
 
 /* menu */
 .menu {
-    height: 80px; 
     position: fixed;
     z-index: 500;
 }
@@ -56,5 +55,28 @@
 .arrow {
     font-size: 40px;
     margin-top: 110px;
+}
+
+/* sezione piani */
+.input-fatturazione {
+    
+    
+}
+.input-fatturazione input {
+    
+    font-size: 13px;
+    font-weight: 100;
+}
+
+
+/* SECTION SQUARE */
+.square {
+    width: calc(100% / 3);
+    height: calc(100vw / 3);
+}
+
+.square__content {
+    width: 50%;
+    height: 50%;
 }
 
