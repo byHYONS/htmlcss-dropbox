@@ -1,6 +1,10 @@
 /* ---------------------------
             HEADER
 --------------------------- */
+p {font-size: 15px; font-weight: 100;}
+
+.col-33 {width: calc(100% / 3 - 25px);}
+
 /* logo */
 .logo img {background-size: 80%;}
 
@@ -57,22 +61,77 @@
     margin-top: 110px;
 }
 
-/* sezione piani */
+/* sezione prezzi & piani */
 .input-fatturazione {
     font-size: 20px;
     font-weight: 100;
     margin-top: 35px;
-    margin-bottom: 25px;
-    
+    margin-bottom: 70px;   
 }
 
 .input-fatturazione label {padding: 0 10px;}
 
-input[type="radio"] {transform: scale(1.5); }
-
-.input-fatturazione label {}
+input[type="radio"] {transform: scale(1.5);}
 
 label[for="mensile"] {margin-right: 25px;}
+
+.plan {
+    height: 100%;
+    border: 1px solid rgb(207, 207, 212);
+}
+
+/* PIANI COLLONNE 33 */
+.plan__top {
+    padding: 15px 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
+    border-bottom: 1px solid rgb(207, 207, 212);
+}
+
+.plan__middle, 
+.plan__bottom {padding: 35px;}
+
+.plan__middle__price h4 + p {
+    font-weight: 400;
+    margin: 20px 0 10px 0;
+}
+.plan__middle__plan ul li span,
+.plan__bottom ul li span
+ {display: block;}
+
+.plan__middle__plan li,
+.plan__bottom li {
+    display: flex;
+    font-size: 16px;
+    font-weight: 100;
+    padding: 15px 0;
+}
+
+.plan__bottom i {color: rgb(26, 65, 240); font-size: 18px;}
+.plan__middle__btn {margin-top: 40px;}
+
+.plan__middle__btn a {
+    color: rgb(26, 65, 240);
+    text-decoration: 1.5px underline rgb(26, 65, 240);
+    
+}
+
+.plan__middle__btn button {
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+}
+
+.plan hr {
+    margin: 30px 35px;
+    border: 1px solid rgb(207, 207, 212);
+    width: 30%;
+}
+
+
+
 
 /* SECTION SQUARE */
 .square {
