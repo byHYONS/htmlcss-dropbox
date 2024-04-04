@@ -7,9 +7,7 @@
     <title>DropBox</title>
     <link rel="stylesheet" href="./css/utility.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -17,11 +15,12 @@
     <!-- header • menù 2 colonne -->
     <header>
         <div class="container-full bg-white menu">
-            <div class="row ai-center ht-80">
+            <div class="row ai-center ht-100 pdg-15">
                 <!-- logo + menù di sinistra -->
-                <nav class="menu-left col-50">
-                    <div class="content d-flex jc-around">
-                        <img src="./img/logo-small.png" alt="logo DropBox" class="logo">
+                <nav class="menu_left col-50">
+                    <div class="menu_left_content d-flex gap-50">
+                        <!-- logo -->
+                        <img src="./img/logo-small.png" alt="logo DropBox">
                         <ul>
                             <li><a href="#">Perch&eacute; Dropbox</a></li>
                             <li><a href="#">Funzioni</a></li>
@@ -30,13 +29,14 @@
                     </div>
                 </nav>
                 <!-- menu di destra + btn inizia -->
-                <nav class="menu-right col-50">
-                    <div class="content d-flex jc-around">
+                <nav class="menu_right col-50">
+                    <div class="menu_right_content jc-end d-flex gap-50">
                         <ul>
                             <li><a href="#">Supporto</a></li>
                             <li><a href="#">Contatta l'ufficio vendita</a></li>
                             <li><a href="#">Accedi</a></li>
                         </ul>
+                        <!-- bottone INIZIA -->
                         <button class="btn bg-blue">Inizia</button>
                     </div>
                 </nav>
@@ -45,11 +45,11 @@
     </header>
     <main>
         <!-- MAIN -->
-        <!-- hero section • una colonne da 100 e due 30 70 -->
+        <!-- HERO SECTION • una colonne da 100 e due 30 70 -->
         <div class="container-full hero">
-            <div class="container-80 pt-150">
+            <div class="container-80 pt-120">
                 <!-- colonna 100 • h1 -->
-                <div class="row">
+                <div class="row hero-push-down">
                     <div class="col-100 hero__title">
                         <h1>Tutto ci&ograve; che ti serve per il lavoro, in un unico posto</h1>
                     </div>
@@ -57,9 +57,8 @@
                     <div class="d-flex mt-75">
                         <div class="col-35 ovf-auto hero__content">
                             <div class="hero__content__text">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vitae inventor
-                                    necessitatibus dolore voluptate! Optio beatae, eligendi nam unde sed facilis id odit
-                                    dolorem ipsum. Veritatis eos voluptatum nostrum odio.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vitae inventor necessitatibus dolore voluptate! Optio beatae, eligendi nam unde sed facilis id odit dolorem ipsum. Veritatis eos voluptatum nostrum odio.</p>
+                                <!-- bottone  -->
                                 <button class="btn">Inizia la tua prova gratuita</button>
                                 <p>Lorem ipsum dolor sit amet.</p>
                             </div>
@@ -80,7 +79,8 @@
             <div class="row gap-35">
                 <!-- colonna 100 • h2 -->
                 <div class="col-100">
-                    <h2 class="mt-75">Trova il piano business che fa per te</h2>
+                    <h2 class="mt-130">Trova il piano business che fa per te</h2>
+                    <!-- input radio  -->
                     <div class="input-fatturazione">
                         <input id="mensile" type="radio" name="Piani" value="mensile">
                         <label for="mensile">Fatturazione Mensile</label>
@@ -96,7 +96,7 @@
                         <div class="plan__top">
                             <span><i class="fas fa-user mr-5"></i> Singolo</span>
                         </div>
-                        <!-- nome piano + prezzo -->
+                        <!-- nome piano + prezzo • PROFESSIONAL-->
                         <div class="plan__middle mt-15">
                             <div class="plan__middle__price">
                                 <h4>Professional</h4>
@@ -107,14 +107,13 @@
                             <div class="plan__middle__plan mt-35">
                                 <ul>
                                     <li><i class="fas fa-user mr-10"></i><span>1 Utente</span></li>
-                                    <li><i class="fas fa-folder mr-10"></i><span>5 TB di spazio di archiviazione
-                                            sicuro</span></li>
-                                    <li><i class="fas fa-share-nodes mr-10"></i><span>Funzioni di produttivit&agrave;
-                                            premium e condivisione file semplice e sicura</span></li>
+                                    <li><i class="fas fa-folder mr-10"></i><span>5 TB di spazio di archiviazione sicuro</span></li>
+                                    <li><i class="fas fa-share-nodes mr-10"></i><span>Funzioni di produttivit&agrave; premium e condivisione file semplice e sicura</span></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="plan__middle__btn">
+                            <!-- bottone • PROVA GRATUITA -->
                             <button class="btn bg-blue">Prova gratis per 30 giorni</button>
                             <p>oppure <a href="#">acquista ora</a></p>
                         </div>
@@ -122,10 +121,8 @@
                         <div class="plan__bottom">
                             <h5>Punti salienti del piano</h5>
                             <ul>
-                                <li><i class="fas fa-check mr-10"></i><span>Invia file fino a 100 GB con Dropbox
-                                        transfert</span></li>
-                                <li><i class="fas fa-check mr-10"></i><span>Certelle offline su dispositivi
-                                        mobili</span></li>
+                                <li><i class="fas fa-check mr-10"></i><span>Invia file fino a 100 GB con Dropbox transfert</span></li>
+                                <li><i class="fas fa-check mr-10"></i><span>Certelle offline su dispositivi mobili</span></li>
                             </ul>
                         </div>
                     </div>
@@ -137,6 +134,7 @@
                             <span><i class="fas fa-users mr-5"></i> Singolo</span>
                         </div>
                         <div class="plan__middle mt-15">
+                            <!-- nome piano + prizzo • ADVANCED -->
                             <div class="plan__middle__price">
                                 <h4>Advanced</h4>
                                 <p>€ 18,00</p>
@@ -145,14 +143,13 @@
                             <div class="plan__middle__plan mt-35">
                                 <ul>
                                     <li><i class="fas fa-users mr-10"></i><span>3 o pi&ugrave; utenti</span></li>
-                                    <li><i class="fas fa-folder mr-10"></i><span>Tutto lo spazio di cui ha bisogno il
-                                            tuo team</span></li>
-                                    <li><i class="fas fa-share-nodes mr-10"></i><span></span>Sofisticate funzioni di
-                                        controllo e per tenere al sicuro tutti i file del tuo team</li>
+                                    <li><i class="fas fa-folder mr-10"></i><span>Tutto lo spazio di cui ha bisogno il tuo team</span></li>
+                                    <li><i class="fas fa-share-nodes mr-10"></i><span></span>Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="plan__middle__btn">
+                            <!-- bottone • PROVA GRATUITA -->
                             <button class="btn bg-blue">Prova gratis per 30 giorni</button>
                             <p>oppure <a href="#">acquista ora</a></p>
                         </div>
@@ -160,16 +157,11 @@
                         <div class="plan__bottom">
                             <h5>Punti salienti del piano</h5>
                             <ul>
-                                <li><i class="fas fa-check mr-10"></i><span>Nessun limite di spazio per i file</span>
-                                </li>
-                                <li><i class="fas fa-check mr-10"></i><span>Certelle offline su dispositivi
-                                        mobili</span></li>
-                                <li><i class="fas fa-check mr-10"></i><span>Risparmi del 50% rispetto alle iscrizioni
-                                        singole</span></li>
-                                <li><i class="fas fa-check mr-10"></i><span>Possibilit&agrave; di inserire nuovi membri
-                                        nel team</span></li>
-                                <li><i class="fas fa-check mr-10"></i><span>Gestione dei permessi in base ai
-                                        ruoli</span></li>
+                                <li><i class="fas fa-check mr-10"></i><span>Nessun limite di spazio per i file</span></li>
+                                <li><i class="fas fa-check mr-10"></i><span>Certelle offline su dispositivi mobili</span></li>
+                                <li><i class="fas fa-check mr-10"></i><span>Risparmi del 50% rispetto alle iscrizioni singole</span></li>
+                                <li><i class="fas fa-check mr-10"></i><span>Possibilit&agrave; di inserire nuovi membri nel team</span></li>
+                                <li><i class="fas fa-check mr-10"></i><span>Gestione dei permessi in base ai ruoli</span></li>
                             </ul>
                         </div>
                     </div>
@@ -181,6 +173,7 @@
                             <span><i class="fas fa-city mr-5"></i> Azienda</span>
                         </div>
                         <div class="plan__middle mt-15">
+                            <!-- nome piano + prezzo • ENTERPRICE -->
                             <div class="plan__middle__price">
                                 <h4>Enterprice</h4>
                                 <p>Contattaci</p>
@@ -189,14 +182,13 @@
                             <div class="plan__middle__plan mt-35">
                                 <ul>
                                     <li><i class="fas fa-city mr-10"></i><span>10 o pi&ugrave; utenti</span></li>
-                                    <li><i class="fas fa-folder mr-10"></i><span>Soluzioni personalizzate per la tua
-                                            azienda</span></li>
-                                    <li><i class="fas fa-share-nodes mr-10"></i><span></span>Assistenza personalizzata
-                                        per aiutare gli amministratori in una gestione su larga scala</li>
+                                    <li><i class="fas fa-folder mr-10"></i><span>Soluzioni personalizzate per la tua azienda</span></li>
+                                    <li><i class="fas fa-share-nodes mr-10"></i><span></span>Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="plan__middle__btn">
+                            <!-- bottone • PROVA GRATUITA -->
                             <button class="btn bg-blue">Prova gratis per 30 giorni</button>
                             <p>oppure <a href="#">acquista ora</a></p>
                         </div>
@@ -204,11 +196,9 @@
                         <div class="plan__bottom">
                             <h5>Punti salienti del piano</h5>
                             <ul>
-                                <li><i class="fas fa-check mr-10"></i><span>Certelle offline su dispositivi
-                                        mobili</span></li>
+                                <li><i class="fas fa-check mr-10"></i><span>Certelle offline su dispositivi mobili</span></li>
                                 <li><i class="fas fa-check mr-10"></i><span>Servizio assistenza 24&#8725;h</span></li>
-                                <li><i class="fas fa-check mr-10"></i><span>Possibilit&agrave; di personalizzazione
-                                        totale</span></li>
+                                <li><i class="fas fa-check mr-10"></i><span>Possibilit&agrave; di personalizzazione totale</span></li>
                             </ul>
                         </div>
                     </div>
@@ -223,10 +213,10 @@
                             <div class="col-70 mrg-35 ta-start">
                                 <h4>Enterprise</h4>
                                 <p class="mt-25"><strong>Contatta l'ufficio vendita per i prezzi</strong>r</p>
-                                <p class="mt-50">Soluzione personalizzata e supporto su misura per aiutare i
-                                    professionisti nella gestione su qualsiasi scala</p>
+                                <p class="mt-50">Soluzione personalizzata e supporto su misura per aiutare i professionisti nella gestione su qualsiasi scala</p>
                             </div>
                             <div class="col-30 team">
+                                <!-- bottone • CONTATTA UFFICIO VENDITA -->
                                 <button class="btn bg-blue btn__team">Contatta l'ufficio vendita</button>
                             </div>
                         </div>
@@ -241,14 +231,12 @@
                 <div class="col-60">
                     <img src="./img/partner.png" alt="partner Dropbox">
                 </div>
-                <!-- colonna 40 • h3 + text -->
+                <!-- colonna 40 • h4 + text -->
                 <div class="col-40">
                     <div class="pertner__content mrg-50">
                         <h4>Entra in contatto con un partner Dropbox</h4>
-                        <p class="mt-25">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat veritatis
-                            exercitationem molestiae consequuntur aliquam. Eaque sed sit mollitia explicabo dolor,
-                            debitis hic. Labore nihil aut voluptate ipsam corrupti commodi perferendis, tempora libero
-                            aspernatur modi cumque nisi id eligendi harum vero.</p>
+                        <p class="mt-25">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat veritatis exercitationem molestiae consequuntur aliquam. Eaque sed sit mollitia explicabo dolor, debitis hic. Labore nihil aut voluptate ipsam corrupti commodi perferendis, tempora libero aspernatur modi cumque nisi id eligendi harum vero.</p>
+                        <!-- bottone • TROVA PARTNER -->
                         <button class="btn-trasparent-black mt-50">Trova un partner</button>
                     </div>
                 </div>
@@ -257,7 +245,7 @@
         <!-- Sezione servizi • colonna 100 + 6 colonne 33 + colonna 100 -->
         <div class="container-70">
             <div class="row gap-35 service">
-                <!-- colonna 100 • h2 -->
+                <!-- colonna 100 • h3 -->
                 <div class="col-100 mt-150">
                     <h3>Esegui pi&ugrave; operazioni con Dropbox Business</h3>
                 </div>
@@ -265,46 +253,34 @@
                 <div class="col-33__service mt-75">
                     <img src="./img/business-feature-switching-tools.png" alt="business feature switching">
                     <h4 class="mt-25">Passa di meno da uno strumento a un altro</h4>
-                    <p class="mt-35">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quas aliquam non,
-                        sunt rem incidunt cupiditate laudantium quidem et nam natus, quo adipisci, quis enim accusamus
-                        ullam animi doloribus ea!</p>
+                    <p class="mt-35">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quas aliquam non, sunt rem incidunt cupiditate laudantium quidem et nam natus, quo adipisci, quis enim accusamus ullam animi doloribus ea!</p>
                 </div>
                 <div class="col-33__service mt-75">
                     <img src="./img/business-feature-send-files-it.png" alt="business feature switching">
                     <h4 class="mt-25">Passa di meno da uno strumento a un altro</h4>
-                    <p class="mt-35">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quas aliquam non,
-                        sunt rem incidunt cupiditate laudantium quidem et nam natus, quo adipisci, quis enim accusamus
-                        ullam animi doloribus ea!</p>
+                    <p class="mt-35">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quas aliquam non, sunt rem incidunt cupiditate laudantium quidem et nam natus, quo adipisci, quis enim accusamus ullam animi doloribus ea!</p>
                 </div>
                 <div class="col-33__service mt-75">
                     <img src="./img/business-feature-coordinate-it.png" alt="business feature switching">
                     <h4 class="mt-25">Passa di meno da uno strumento a un altro</h4>
-                    <p class="mt-35">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quas aliquam non,
-                        sunt rem incidunt cupiditate laudantium quidem et nam natus, quo adipisci, quis enim accusamus
-                        ullam animi doloribus ea!</p>
+                    <p class="mt-35">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quas aliquam non, sunt rem incidunt cupiditate laudantium quidem et nam natus, quo adipisci, quis enim accusamu ullam animi doloribus ea!</p>
                 </div>
                 <div class="col-33__service mt-35">
                     <img src="./img/business-feature-integrations-it.png" alt="business feature switching">
                     <h4 class="mt-25">Passa di meno da uno strumento a un altro</h4>
-                    <p class="mt-35">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quas aliquam non,
-                        sunt rem incidunt cupiditate laudantium quidem et nam natus, quo adipisci, quis enim accusamus
-                        ullam animi doloribus ea!</p>
+                    <p class="mt-35">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quas aliquam non sunt rem incidunt cupiditate laudantium quidem et nam natus, quo adipisci, quis enim accusamus ullam animi doloribus ea!</p>
                 </div>
                 <div class="col-33__service mt-35">
                     <img src="./img/business-feature-multi-device.png" alt="business feature switching">
                     <h4 class="mt-25">Passa di meno da uno strumento a un altro</h4>
-                    <p class="mt-35">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quas aliquam non,
-                        sunt rem incidunt cupiditate laudantium quidem et nam natus, quo adipisci, quis enim accusamus
-                        ullam animi doloribus ea!</p>
+                    <p class="mt-35">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quas aliquam non, sunt rem incidunt cupiditate laudantium quidem et nam natus, quo adipisci, quis enim accusamus ullam animi doloribus ea!</p>
                 </div>
                 <div class="col-33__service mt-35">
                     <img src="./img/business-feature-security.png" alt="business feature switching">
                     <h4 class="mt-25">Passa di meno da uno strumento a un altro</h4>
-                    <p class="mt-35">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quas aliquam non,
-                        sunt rem incidunt cupiditate laudantium quidem et nam natus, quo adipisci, quis enim accusamus
-                        ullam animi doloribus ea!</p>
+                    <p class="mt-35">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quas aliquam non, sunt rem incidunt cupiditate laudantium quidem et nam natus, quo adipisci, quis enim accusamus ullam animi doloribus ea!</p>
                 </div>
-                <!-- Section testimonial • colonna 100 h3 -->
+                <!-- Section testimonial • colonna 100 h2 -->
                 <div class="col-70">
                     <div class="testimonial">
                         <h2>Pi&ugrave; di 500.000 team utilizzano Dropbox business</h2>
@@ -338,14 +314,11 @@
                     </div>
                 </div>
             </div>
-            <!-- colonna singola -->
+            <!-- colonna singola • LOGO + TESTO-->
             <div class="square square__bg-5 ovf-auto">
                 <div class="square__content__text">
                     <img src="./img/designit.svg" alt="designit partener Dropbox">
-                    <p class="mt-50">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime repellat
-                        voluptatum ut, sequi neque, obcaecati fugiat commodi beatae, necessitatibus porro asperiores
-                        officiis. Rerum, quis enim ea cupiditate in, sequi amet fugit maxime debitis quasi itaque non
-                        eum mollitia? Dolorum, obcaecati?</p>
+                    <p class="mt-50">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime repellat voluptatum ut, sequi neque, obcaecati fugiat commodi beatae, necessitatibus porro asperiores officiis. Rerum, quis enim ea cupiditate in, sequi amet fugit maxime debitis quasi itaque non eum mollitia? Dolorum, obcaecati?</p>
                     <p class="mt-35">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, repellat?</p>
                 </div>
             </div>
@@ -373,7 +346,7 @@
                 </div>
             </div>
         </div>
-        <!-- colonna full • h3 + btn -->
+        <!-- colonna full • h2 + btn -->
         <div class="container-full bg-lightblue ">
             <div class="row jc-between ai-center container-70 cta">
                 <div class="col-60 cta__content">
@@ -390,10 +363,8 @@
                 <h3>Domande frequenti</h3>
                 <ul class="mt-50">
                     <li><span class="faq__content">Qual &egrave; la differenza fra Dropbox business standard e Dropbox business Advanced?</span><i class="fas fa-angle-down faq__content-icon"></i></li>
-                    <li><span class="faq__content">Qual &egrave; la differenza fra Dropbox business standard e Dropbox
-                            business Advanced?</span><i class="fas fa-angle-down faq__content-icon"></i></li>
-                    <li><span class="faq__content">Qual &egrave; la differenza fra Dropbox business standard e Dropbox
-                            business Advanced?</span><i class="fas fa-angle-down faq__content-icon"></i></li>
+                    <li><span class="faq__content">Qual &egrave; la differenza fra Dropbox business standard e Dropbox business Advanced?</span><i class="fas fa-angle-down faq__content-icon"></i></li>
+                    <li><span class="faq__content">Qual &egrave; la differenza fra Dropbox business standard e Dropbox business Advanced?</span><i class="fas fa-angle-down faq__content-icon"></i></li>
                 </ul>
 
             </div>
@@ -465,6 +436,7 @@
                     </div>
                 </div>
             </div>
+            <!-- sezione • SCEGLI LA LINGUA -->
             <div class="container-full bg-black">
                 <div class="container-80">
                     <div class="line"></div>
@@ -472,17 +444,13 @@
                         <div class="footer__bottom">
                             <div class="footer__bottom-language">
                                 <i class="fas fa-earth-africa"></i>
-                                <span>Italiano</span><i class="fas fa-caret-up"></i>
-                    
+                                <span>Italiano</span><i class="fas fa-caret-up"></i>                   
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </footer>
-
 </body>
-
 </html>

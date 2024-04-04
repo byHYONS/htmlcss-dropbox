@@ -1,55 +1,78 @@
 /* ---------------------------
-            HEADER
+            STYLE 
 --------------------------- */
+/* RESET */
 p {font-size: 15px; font-weight: 100;}
 
+/* COLONNE */
 .col-33__plan {width: calc((100% - (35px * 2)) / 3);}
 
 .col-33__service {width: calc((100% - (35px * 2)) / 3);}
 
-/* logo */
-.logo img {background-size: 80%;}
-
-/* menu */
+/* ---------------------------
+            HEADER
+--------------------------- */
+/* NAV MENÙ */
 .menu {
     position: fixed;
     z-index: 500;
 }
 
-.menu-left ul,
-.menu-right ul
-{display: flex; gap: 30px;}
+.menu_left_content img {width: 25%;}
 
-.menu-left ul li, 
-.menu-right ul li {
-    text-decoration: none;  
-    /* display: inline-block; */
+.menu_left_content,
+.menu_right_content {margin: 15px;}
+
+.menu_left ul,
+.menu_right ul {
+    display: flex; 
+    gap: 30px; 
+    align-items: center; }
+
+.menu_left ul li, 
+.menu_right ul li {
+    text-decoration: none;
 }
 
-.menu-left ul li a, 
-.menu-right ul li a {
+.menu_left ul li a, 
+.menu_right ul li a {
     color: black;
-    /* padding: 10px; */
-    font-size: 13px;
+    font-size: 14px;
     list-style-type: none;
 }
+/* --- FINE --- */
 
 /* bottone inizia */
-.btn {
-    padding: 8px 14px;
-    font-size: 12px;
+.menu_right_content button {
+    padding: 9px 20px;
+    font-size: 16px;
+}
+/* --- FINE --- */
+
+/* bottone blu */
+.btn{
     background-color: rgb(5, 93, 245); 
     color: white;
     border-radius: 0;
 }
-
+/* --- FINE --- */
 
 /* ---------------------------
         MAIN • #1 SEZIONE
 --------------------------- */
-
+/* HERO SECTION */
 .hero {background-color: rgb(181, 209, 232);}
 
+.hero__title h1 {font-size: 80px;}
+
+/* spostiamo di 50px verso il basso il contenuto */
+.hero-push-down {
+    position: relative;
+    top: 50px;
+}
+/* --- FINE --- */
+
+/* contenuto HERO */
 .hero__content {
     display: flex;
     flex-direction: column;
@@ -61,22 +84,26 @@ p {font-size: 15px; font-weight: 100;}
     font-size: 16px;  
     font-weight: 100;  
 }
+/* --- FINE --- */
 
+/*  bottone hero */
 .hero__content__text button {
     width: 70%;
     margin: 30px 0; 
-    font-size: 15px; 
-    padding: 12px 15px;
+    font-size: 18px; 
+    padding: 13px 18px;
 }
+/* --- FINE --- */
 
+/* immagine e icona */
 .hero__content__img img {width: 100%; height: auto;}
 
 .hero__content__icon i {
     display: block;
-    font-size: 40px;
-    margin-bottom: 25px;
+    font-size: 50px;
+    margin-bottom: 75px;
 }
-
+/* --- FINE --- */
 
 /* sezione prezzi & piani */
 .input-fatturazione {
@@ -97,6 +124,7 @@ label[for="mensile"] {margin-right: 25px;}
     height: 100%;
     border: 1px solid rgb(207, 207, 212);
 }
+/* --- FINE --- */
 
 /* PIANI COLLONNE 33 */
 .plan__top {
@@ -116,6 +144,7 @@ label[for="mensile"] {margin-right: 25px;}
     font-weight: 400;
     margin: 20px 0 10px 0;
 }
+
 .plan__middle__plan ul li span,
 .plan__bottom ul li span
  {display: block;}
@@ -136,14 +165,14 @@ label[for="mensile"] {margin-right: 25px;}
 
 .plan__middle__btn a {
     color: rgb(26, 65, 240);
-    text-decoration: 1.5px underline rgb(26, 65, 240);
-    
+    text-decoration: 1.5px underline rgb(26, 65, 240);   
 }
 
 .plan__middle__btn button {
     margin-bottom: 25px;
+    padding: 12px 15px;
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
     width: 100%;
 }
 
@@ -158,6 +187,7 @@ label[for="mensile"] {margin-right: 25px;}
     font-size: 18px;
     padding: 10px 20px;
 }
+/* --- FINE --- */
 
 /* sezione foto testo */
 .partner {margin-top: 75px;}
@@ -175,6 +205,7 @@ label[for="mensile"] {margin-right: 25px;}
 
 /* Sezione servizi */
 .service img {width: 100%;}
+/* --- FINE --- */
 
 
 /* Section testimonial */
@@ -190,6 +221,7 @@ label[for="mensile"] {margin-right: 25px;}
     color: rgb(26, 65, 240);
     text-decoration: 1.5px underline rgb(26, 65, 240);
 }
+/* --- FINE --- */
 
 /* Section square */
 .square {
@@ -236,7 +268,7 @@ label[for="mensile"] {margin-right: 25px;}
 .square__bg-8 {background-color: rgb(13, 36, 130);}
 
 .square__bg-9 {background-color: rgb(252, 217, 76);}
-
+/* --- FINE --- */
 
 /* Call to action */
 .cta {height: 20vw;}
@@ -256,6 +288,7 @@ label[for="mensile"] {margin-right: 25px;}
     background-color: white;
     color: black;
 }
+/* --- FINE --- */
 
 /* sezione FAQ */
 .faq {margin: 100px 0 150px;}
@@ -281,6 +314,11 @@ label[for="mensile"] {margin-right: 25px;}
     padding: 15px;
     text-align: end;
 }
+/* --- FINE --- */
+
+/* --------------------------
+            FOOTER
+-------------------------- */
 
 /* footer */
 .footer__content {padding: 30px;}
@@ -320,3 +358,4 @@ label[for="mensile"] {margin-right: 25px;}
     font-weight: 100;
     font-size: 20px;
 }
+/* --- FINE --- */
