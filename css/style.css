@@ -3,9 +3,9 @@
 --------------------------- */
 p {font-size: 15px; font-weight: 100;}
 
-.col-33__plan {width: calc(100% / 3 - 25px);}
+.col-33__plan {width: calc(100% / 3 - 24px);}
 
-.col-33__service {width: calc(100% / 3 - 25px);}
+.col-33__service {width: calc(100% / 3 - 35px);}
 
 /* logo */
 .logo img {background-size: 80%;}
@@ -43,6 +43,7 @@ p {font-size: 15px; font-weight: 100;}
     border-radius: 0;
 }
 
+
 /* ---------------------------
         MAIN • #1 SEZIONE
 --------------------------- */
@@ -78,6 +79,7 @@ input[type="radio"] {transform: scale(1.5);}
 label[for="mensile"] {margin-right: 25px;}
 
 .plan {
+    overflow: auto;
     height: 100%;
     border: 1px solid rgb(207, 207, 212);
 }
@@ -90,6 +92,8 @@ label[for="mensile"] {margin-right: 25px;}
     font-weight: 100;
     border-bottom: 1px solid rgb(207, 207, 212);
 }
+
+.plan__middle {min-height: 480px;}
 
 .plan__middle, 
 .plan__bottom {padding: 35px;}
@@ -110,8 +114,11 @@ label[for="mensile"] {margin-right: 25px;}
     padding: 15px 0;
 }
 
+.plan__middle__plan {overflow: auto;}
+
 .plan__bottom i {color: rgb(26, 65, 240); font-size: 18px;}
-.plan__middle__btn {margin-top: 40px;}
+
+.plan__middle__btn {margin: 0px 35px 50px 35px;}
 
 .plan__middle__btn a {
     color: rgb(26, 65, 240);
@@ -171,6 +178,16 @@ label[for="mensile"] {margin-right: 25px;}
 }
 
 /* Section square */
+.square {
+    width: calc(100% / 3);
+    height: calc(100vw / 3);
+}
+
+.square__content {
+    width: 50%;
+    height: 50%;
+}
+
 .square__content {
     padding: 45px;
     display: flex;
@@ -186,11 +203,7 @@ label[for="mensile"] {margin-right: 25px;}
 
 .square__content__text img {width: 80%;}
 
-
-
-.square__content__text {
-    padding: 45px;
-}
+.square__content__text {padding: 45px;}
 
 .square__bg-1 {background-color: rgb(162, 212, 155); border: 15px solid rgb(208, 232, 204);}
 
@@ -211,14 +224,22 @@ label[for="mensile"] {margin-right: 25px;}
 .square__bg-9 {background-color: rgb(252, 217, 76);}
 
 
-/* SECTION SQUARE */
-.square {
-    width: calc(100% / 3);
-    height: calc(100vw / 3);
+/* Call to action */
+.cta {height: 20vw;}
+
+.cta__content h2 {    
+    padding: 0px 0;
+    font-size: 35px;
+    color: rgb(97, 19, 43);
 }
 
-.square__content {
-    width: 50%;
-    height: 50%;
+.cta__content__btn .btn {
+    display: block;
+    font-size: 15px;
+    padding: 12px;
+    width: 60% ;
+    margin: 0 auto;
+    background-color: white;
+    color: black;
 }
 
