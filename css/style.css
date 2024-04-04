@@ -184,6 +184,14 @@ label[for="mensile"] {margin-right: 25px;}
     width: 100%;
 }
 
+.square__content__text img {width: 80%;}
+
+
+
+.square__content__text {
+    padding: 45px;
+}
+
 .square__bg-1 {background-color: rgb(162, 212, 155); border: 15px solid rgb(208, 232, 204);}
 
 .square__bg-2 {background-color: rgb(97, 19, 43);}
@@ -191,6 +199,17 @@ label[for="mensile"] {margin-right: 25px;}
 .square__bg-3 {background-color: rgb(54, 148, 207);}
 
 .square__bg-4 {background-color: rgb(237, 58, 52);}
+
+.square__bg-5 {background-color: rgb(245, 245, 245);}
+
+.square__bg-6 {background-color: rgb(214, 51, 45);}
+
+.square__bg-7 {background-color: rgb(181, 209, 232);}
+
+.square__bg-8 {background-color: rgb(13, 36, 130);}
+
+.square__bg-9 {background-color: rgb(252, 217, 76);}
+
 
 /* SECTION SQUARE */
 .square {
