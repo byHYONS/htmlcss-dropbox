@@ -18,7 +18,7 @@ p {font-size: 15px; font-weight: 100;}
     z-index: 500;
 }
 
-.menu_left_content img {width: 25%;}
+.menu_left_content img {width: 25%; height: auto; object-fit: contain;}
 
 .menu_left_content,
 .menu_right_content {margin: 15px;}
