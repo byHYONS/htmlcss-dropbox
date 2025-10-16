@@ -1,6 +1,7 @@
 # 💾 Dropbox – Replica HTML & CSS
 
-> [NOTE!]
+> [!NOTE]
+>
 > Riproduzione a scopo di esercitazione.
 
 Un progetto di ricreazione **frontend** ispirato alla homepage ufficiale di [Dropbox](https://www.dropbox.com).  
@@ -21,8 +22,6 @@ Questo progetto è stato pensato come esercizio professionale per consolidare:
 - L’attenzione ai dettagli visivi: spaziatura, contrasto e leggibilità
 
 ---
-
-## 🖼️ Anteprima
 
 ![Anteprima progetto](img/dropbox.webp)
 
